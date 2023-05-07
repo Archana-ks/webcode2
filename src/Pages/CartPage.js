@@ -11,7 +11,7 @@ const CartPage = () => {
         console.log(token)
     }
 	const{cart, setCart} = useContext(Cart)
-	const [count, setCount] = useState(1);
+	const [count, ] = useState(1);
 	const [total, setTotal] = useState();
 	useEffect(() => {
         setTotal(cart.reduce((acc, cuu) => acc + cuu.price, 0))
